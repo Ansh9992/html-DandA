@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&A Constructions - Dheeraj and Ansh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Disclaimer Modal -->
+    <div id="disclaimer-modal" class="modal-overlay">
+        <div class="modal-content glass-card">
+            <h2>Disclaimer</h2>
+            <p>This website is just a prototype developed by Ansh and does not represent any real business.</p>
+            <button class="btn btn-primary" id="enter-site">Enter Site</button>
+        </div>
+    </div>
+
+    <!-- Cart Summary Banner -->
+    <div id="cart-summary" class="cart-banner glass-card">
+        <div class="cart-info">
+            <span id="cart-count">0 items</span>
+            <span id="cart-total">₹0</span>
+            <span class="delivery-offer">FREE Delivery (₹200 OFF)</span>
+        </div>
+        <button class="btn btn-primary" id="checkout-btn">Checkout Cart</button>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content glass-card">
+                <h1 class="hero-title">
+                    <strong class="highlight">D&A</strong> Constructions
+                </h1>
+                <p class="hero-subtitle">Dheeraj and Ansh Constructions</p>
+                <p class="hero-tagline">Building your dreams with innovation and excellence</p>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="section" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Why Choose Us?</h2>
+                    <p>Book labours/workers from your home with the help of our application or website in just few clicks, and you can also buy construction material at discounted price with free delivery.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="section offer-section" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <div class="offer-content">
+                        <div class="offer-text">
+                            <h2>Limited Time Offer</h2>
+                            <p>If you book architect or interior designer today we will give you a 3D printed model of your house and give 3D VR experience so that you can see your house and make changes—feel it before it is even built.</p>
+                        </div>
+                        <div class="offer-images">
+                            <div class="offer-image-card glass-card">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1752553593/pplx_project_search_images/69a53af0e3151f37f5df8d90e0d284ba2a7da925.jpg" alt="3D House Model">
+                                <p>3D Printed Model</p>
+                            </div>
+                            <div class="offer-image-card glass-card">
+                                <img src="https://pplx-res.cloudinary.com/image/upload/v1752553593/pplx_project_search_images/34bd10273c12ec734b02b3a1d7ca0285766b7fc9.jpg" alt="VR Experience">
+                                <p>VR Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Action Hub Section -->
+        <section class="section action-hub" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Our Services</h2>
+                    <div class="staggered-list">
+                        <div class="list-left">
+                            <button class="action-btn glass-card" data-action="labour" data-animate>
+                                <h3>1. Book Labour</h3>
+                                <p>Skilled workers for your project</p>
+                            </button>
+                            <button class="action-btn glass-card" data-action="interior" data-animate>
+                                <h3>3. Book Interior Designer</h3>
+                                <p>Transform your space</p>
+                            </button>
+                        </div>
+                        <div class="list-right">
+                            <button class="action-btn glass-card" data-action="architect" data-animate>
+                                <h3>2. Book Architect</h3>
+                                <p>Expert design consultation</p>
+                            </button>
+                            <button class="action-btn glass-card" data-action="materials" data-animate>
+                                <h3>4. Buy Construction Material</h3>
+                                <p>Quality materials at best prices</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Materials Page -->
+        <section class="section materials-page" id="materials-page">
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Buy Construction Material</h2>
+                    <div class="staggered-list materials-list">
+                        <button class="material-btn glass-card" data-material="bricks" data-animate>
+                            <h3>1. Bricks</h3>
+                            <p>₹7 per piece</p>
+                        </button>
+                        <button class="material-btn glass-card" data-material="cement" data-animate>
+                            <h3>2. Cement</h3>
+                            <p>₹360 per bag</p>
+                        </button>
+                        <button class="material-btn glass-card" data-material="sand" data-animate>
+                            <h3>3. Sand</h3>
+                            <p>₹55 per cubic ft</p>
+                        </button>
+                        <button class="material-btn glass-card" data-material="aggregate" data-animate>
+                            <h3>4. Aggregate</h3>
+                            <p>₹50 per cubic ft</p>
+                        </button>
+                        <button class="material-btn glass-card" data-material="granite" data-animate>
+                            <h3>5. Composite Granite</h3>
+                            <p>₹150 per sq ft</p>
+                        </button>
+                        <button class="material-btn glass-card" data-material="iron" data-animate>
+                            <h3>6. TMT Iron Bars</h3>
+                            <p>₹65 per kg</p>
+                        </button>
+                    </div>
+                    <button class="btn btn-secondary" id="back-to-main">Back to Main</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="section stats-section" data-animate>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card glass-card">
+                        <h3>Total Orders</h3>
+                        <div class="stat-number" data-count="1000">0+</div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <h3>Working Labour</h3>
+                        <div class="stat-number" data-count="500">0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Use Us Section -->
+        <section class="section why-use-section" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Why You Should Use Our Application/Website</h2>
+                    <p>With the help of our website or application you can save your time and money. You can book labours and experienced workers at market price or sometimes less than the market price without any extra charges and we also provide construction material with free delivery and less than market price.</p>
+                    <ul class="features-list">
+                        <li data-animate>Labours at your door step</li>
+                        <li data-animate>No hidden charges</li>
+                        <li data-animate>Easy to use interface</li>
+                        <li data-animate>Same day delivery</li>
+                        <li data-animate>Free delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founders Section -->
+        <section class="section founders-section" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <h2>About Our Founders</h2>
+                    <div class="founders-content">
+                        <div class="founder">
+                            <div class="founder-avatar">
+                                <img src="dheeraj.jpg" alt="Dheeraj Thakur">
+                            </div>
+                            <h3>Mr. Dheeraj Thakur</h3>
+                        </div>
+                        <div class="founder">
+                            <div class="founder-avatar">
+                                <img src="WhatsApp Image 2025-06-19 at 19.50.20_de423487 (1).jpg" alt="Ansh Thakur">
+                            </div>
+                            <h3>Mr. Ansh Thakur</h3>
+                        </div>
+                    </div>
+                    <p class="vision">Our vision is to revolutionize the construction industry by providing seamless digital solutions that connect customers with skilled professionals and quality materials, making construction projects more accessible, efficient, and affordable for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Us Section -->
+        <section class="section join-section" data-animate>
+            <div class="container">
+                <div class="glass-card">
+                    <h2>Join Us</h2>
+                    <form id="join-form" class="join-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="aadhaar">Aadhaar Number</label>
+                            <input type="text" id="aadhaar" name="aadhaar" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="details">Other Details</label>
+                            <textarea id="details" name="details" class="form-control" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                    <div id="thank-you-message" class="thank-you hidden">
+                        <h3>Thanks for choosing us!</h3>
+                        <p>We will contact you soon with further details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <div id="quantity-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-card">
+            <h3 id="modal-title">Select Quantity</h3>
+            <div id="modal-body">
+                <input type="number" id="quantity-input" min="1" value="1" class="form-control">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="modal-confirm">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="granite-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-card">
+            <h3>Choose Granite Type</h3>
+            <div class="granite-gallery">
+                <div class="granite-option" data-granite="black">
+                    <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?auto=format&fit=crop&w=200&h=200" alt="Black Granite">
+                    <p>Black Granite</p>
+                </div>
+                <div class="granite-option" data-granite="white">
+                    <img src="https://images.unsplash.com/photo-1615529161002-e8c2e5f4a12c?auto=format&fit=crop&w=200&h=200" alt="White Granite">
+                    <p>White Granite</p>
+                </div>
+                <div class="granite-option" data-granite="beige">
+                    <img src="https://images.unsplash.com/photo-1615529161002-e8c2e5f4a12c?auto=format&fit=crop&w=200&h=200" alt="Beige Granite">
+                    <p>Beige Granite</p>
+                </div>
+            </div>
+            <div class="granite-quantity">
+                <label for="granite-qty">Quantity (sq ft):</label>
+                <input type="number" id="granite-qty" min="1" value="1" class="form-control">
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="granite-cancel">Cancel</button>
+                <button class="btn btn-primary" id="granite-confirm">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal-overlay hidden">
+        <div class="modal-content glass-card">
+            <h3>Checkout Summary</h3>
+            <div id="checkout-items"></div>
+            <div class="checkout-total">
+                <p>Subtotal: <span id="checkout-subtotal">₹0</span></p>
+                <p>Delivery: <span class="strikethrough">₹200</span> FREE</p>
+                <p><strong>Total: <span id="checkout-total">₹0</span></strong></p>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-secondary" id="checkout-cancel">Cancel</button>
+                <button class="btn btn-primary" id="checkout-pay">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
